@@ -32,7 +32,7 @@ export default function CoursePlayer() {
                 {chapter.completed ? '✅' : chapter.current ? '🟠' : '🔒'}
                 <span>Ch {chapter.id}: {chapter.title}</span>
               </div>
-              {chapter.lessons.map((lesson) => (
+              {chapter.lessons.map((lesson: { id: string; title: string; completed: boolean; current?: boolean }) => (
                 <div
                   key={lesson.id}
                   style={{
