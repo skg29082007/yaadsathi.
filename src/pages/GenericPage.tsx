@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import TopBar from '../components/shared/TopBar';
-import { programmes, recentNominations, employerJobs } from '../data/mockData';
+import { programmes, recentNominations } from '../data/mockData';
 
 export default function GenericPage() {
   const location = useLocation();

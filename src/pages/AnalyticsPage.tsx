@@ -8,7 +8,7 @@ export default function AnalyticsPage() {
 
       {/* KPI Row */}
       <div className="grid-5 mb-6">
-        {analyticsData.kpis.map((kpi, i) => (
+        {analyticsData.kpis.map((kpi) => (
           <div key={kpi.label} className="card" style={{ padding: '16px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
               <div style={{ fontSize: '24px', opacity: 0.8 }}>{kpi.icon}</div>
