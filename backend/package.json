@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node gateway.js",
+    "dev": "concurrently \"npm run dev:gateway\" \"npm run dev:erp\" \"npm run dev:lms\" \"npm run dev:emp\"",
+    "dev:gateway": "node gateway.js",
+    "dev:erp": "set PORT=5001&& node erp.js",
+    "dev:lms": "set PORT=5002&& node lms.js",
+    "dev:emp": "set PORT=5003&& node employment.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "concurrently": "^10.0.5",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "http-proxy-middleware": "^4.2.0"
+  }
+}
